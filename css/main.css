@@ -1,0 +1,723 @@
+/*reset css*/
+@font-face{
+	font-family: Montserrat-Medium;
+	src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+	font-family: NunitoSans-Regular;
+	src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+body, ul{margin:0;padding: 0;}
+.wrap{
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+}
+.no-pd-right{padding-right: 0 !important;}
+.list-unstyled{list-style: none;}
+/*end reset css*/
+
+
+/*header css*/
+header{
+	float: left;
+	width: 100%;
+	background: #fff;
+	max-height: 100px;
+}
+.logo {
+	width:10%;
+	float: left;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.navigation {
+	width: 90%;
+	float: left;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.navigation ul > li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.nav-bottom a:hover,
+.navigation ul > li > a:focus,
+.navigation ul > li > a:hover,
+.navigation ul > li > a:active {
+	color: #10c9c3;
+	transition: .5s all ease;
+}
+.navigation ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: "Montserrat-Medium";
+}
+/*end header*/
+
+/*footer*/
+footer{
+	max-height: 284px;
+	background: #141414;
+	float: left;
+	width: 100%;
+}
+.footer-content{
+	width:30%;
+	float: left;
+	/* height: 100%; */
+	transform: translateY(65%);
+}
+.footer-navigation{
+	width: 70%;
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 284px;
+}
+.footer-content > h4{
+	font-family: "Montserrat-Medium";
+	font-size: 18px;
+	color: #fff;
+	
+}
+.footer-navigation address a,
+.footer-content p,
+.nav-bottom a{
+	color: #BCBCBC;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: "NunitoSans Regular", sans-serif;
+	font-style: initial;
+	padding-bottom: 5px;
+	display: block;
+}
+.nav-bottom a{text-transform: capitalize;padding-bottom: 8px;}
+address > a {
+    display: block;
+}
+address{margin-top: -50px}
+ul.nav-bottom.list-unstyled {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.footer-content > p {
+    margin: 10px 0;
+    width: 100%;
+}
+/*end footer*/
+
+
+section#ui-ux li {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+section#ui-ux li img{max-width: 100%;}
+
+
+section#ui-ux li:before {
+    background: rgba(230,230,230,0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    content: "";
+    transition: .5s all ease;
+}
+section#ui-ux li:after {
+   font-family: fontawesome;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    content: "\f2ba";
+    transition: .5s all ease;
+}
+section#ui-ux li:hover:after{
+    opacity: 1;
+    visibility: visible;
+}
+
+section#ui-ux li:hover:before{
+    background: rgba(230,230,230,.75);
+}
+
+
+                                    /*** Phung Manh Quan - Contact Info ***/
+/*** Common ***/
+.text-bold{
+    font-weight:bolder;
+    display: inline-block;
+    width: 20%;
+}
+@font-face{
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face{
+    font-family: NunitoSans-Regular;
+    src: url(../fonts/NunitoSans-Regular.ttf);
+}
+/*** Contact Info ***/
+#content{
+    background-color: #f5f5f5;
+}
+.contact-title{
+    font-weight:bolder;
+    padding: 25px 0 0;
+    font-size: 30px;
+    font-family: Montserrat-Medium;
+}
+.contact-desc{
+    padding: 20px 0 0;
+    line-height: 25px;
+    font-size: 16px;
+    font-family: NunitoSans-Regular;
+}
+.contact-form {
+    font-family: NunitoSans-Regular;
+}
+.contact-items{
+    list-style: none;
+    font-family: NunitoSans-Regular;
+}
+.contact-link{
+    color: #787878;
+}
+.contact-info ul {
+    padding: 0;
+}
+.contact-info ul {
+    line-height: 36px;
+}
+.contact-form__space{
+    margin: 25px 0 0 0;
+	border: transparent;
+}
+.contact-info {
+    padding: 0px 15px;
+}
+textarea.form-control.contact-form__space {
+    max-width: 100%;
+}
+.contac-button{
+    margin: 25px 0;
+    border: transparent;
+    padding: 20px 35px;
+    background-color: #10c9c3;
+    color: #fff;
+    font-weight:bolder;
+}
+.contac-button:hover,
+.contac-button:active,
+.contac-button:focus{
+    background-color: #1e827f;
+    -webkit-transition: 0.9s ease;
+    -moz-transition: 0.9s ease;
+    -ms-transition: 0.9s ease;
+    -o-transition: 0.9s ease;
+    transition: 0.9s ease;
+}
+.contact-top{
+    padding: 30px 0;
+}
+.gooogle-map iframe{
+    width: 100%;
+    height: 470px;
+}
+
+
+/*** Phung Manh Quan - End Contact Info ***/
+
+
+
+/*Quang*/
+/**/
+#sec1{
+	background: #f6f6f6;
+	float: left;
+}
+.content-main{ 
+	clear: both;
+	background-color: #f6f6f6;
+	font-family: Arial;
+}
+.content-left, .content-right{
+	width: 50%;
+	float: left;
+}
+.content-left .content{
+	padding-right: 147px;
+	padding-left: 50px;
+}
+
+.content-left h1{
+	font-size: 38px;
+	font-family: "Montserrat-Medium";
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+.content-left p{
+	padding-top: 0px;
+	font-size: 16px;
+	font-family: "NunitoSans-Regular";
+	padding-bottom: 40px;
+	line-height: 30px;
+	color: #9f9f9f;
+}
+
+.menu-content-main li {
+	color: #9f9f9f;
+	line-height: 20px;
+	font-size: 16px;
+	font-family: "NunitoSans-Regular";
+}
+
+.content-right img{
+	width: 100%;
+}
+
+#sec2{
+	max-width: 1200px;
+	margin: auto;
+	clear: both;
+}
+.sec2-main{
+	padding: 40px 0px;
+}
+.previous-project{
+	width: 33.33%;
+	float: left;
+	text-align: left;
+	display: inline-block;
+}
+.previous-project p{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.center-project{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.next-project{
+	width: 33.33%;
+	float: left;
+	text-align: right;
+	display: inline-block;
+}
+.next-project p{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.menu-content-main span{
+	font-weight: bold;
+	font-size: 16px;
+	display: block;
+	width: 60px;
+	float: left;
+	color: #000;
+}
+/*end quang*/
+
+/*ngoc*/
+#main-content{
+    background-color: #f6f6f6;
+    float: left;
+    width: 100%;
+    clear: both;
+}
+#main-text{
+    height: 310px;
+    width: 100%;
+   text-align: center;  
+}
+#main-text h1{
+    padding-top: 105px;
+
+}
+#main-text p{
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+#main-img{
+    padding: 0;
+}
+.catalogue-img{
+    margin: 0;
+    padding: 0;
+}
+
+.category-img{
+    padding: 0;
+}
+.category-img img {
+    width: 100%;
+    height: auto;
+}
+.category-img a{
+float: left;
+width: 100%;
+height: auto;
+position: relative;
+
+}
+ .category-img a::before{
+    background-color: rgba(49, 205, 201, 0.75);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    content: "";
+    display: none;
+}
+.category-img a:hover::before,
+.category-img a:hover::after
+{
+    display: block;
+}
+.category-img a::after{
+    content: "\f06e";
+    position: absolute;
+    font-family: fontawesome;
+    color: #fff;
+    left: 50%;
+    display:none;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    font-size: 35px;
+}
+
+
+/*end ngoc*/
+
+/*cuong*/
+
+
+#banner img {
+	width: 100%;
+	padding-top: 0px! important;
+	height: 350px; 
+}
+#banner {
+	position: relative;
+	clear: both;
+}
+#banner .banner-text {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#banner .nk-title {
+	line-height: 1.18;
+    margin-bottom: 0;
+}
+#banner .space {
+	display: block;
+	height: 20px;
+}
+#banner .text-while {
+	color: #fff!important;
+
+}
+
+#banner .lead-sm {
+    font-size: 1.25rem;
+}
+
+#features {
+	width: 100%;
+	background-color: #10c9c3!important;
+	height: 240px;	
+	position: relative;
+}
+
+.icon-1 {
+    float: left;
+   
+    position: absolute;
+    font-size: 3.3rem;
+    margin-top: 3px;
+}
+.icon-2 {
+    float: left;
+   
+    position: absolute;
+    font-size: 3.3rem;
+    margin-top: 3px;
+}
+.icon-3 {
+    float: left;
+   
+    position: absolute;
+    font-size: 3.3rem;
+    margin-top: 3px;
+}
+
+.icon-4 {
+    float: left;
+   
+    position: absolute;
+    font-size: 3.3rem;
+    margin-top: 3px;
+}
+.main-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 240px;
+}
+.text {
+	font-weight: 500;
+}
+.text-2 {
+	font-family: Montserrat,sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .85rem;
+    margin-top: -5px;
+
+	}
+.icon-text {
+	margin-left: 5px;
+	float : right;
+	margin-left: 70px;
+	color: #fff;
+	}
+
+#features .main-icon .icon-box .icon-1 {
+	color: #fff;
+}
+
+#features .main-icon .icon-box .icon-2 {
+	color: #fff;
+}
+#features .main-icon .icon-box .icon-3 {
+	color: #fff;
+}
+#features .main-icon .icon-box .icon-4 {
+	color: #fff;
+}
+
+#main-content  {
+	width: 100%;
+	background-color: #f5f5f5;
+	display: inline-block;
+
+}
+
+#main-content .img-content {
+	float: left;
+	width: 50%;
+}
+#main-content .text-main {
+	width: 50%;
+	float: left;
+	}
+
+#main-content .text-main h2{
+	font-family: Montserrat,sans-serif;
+	font-size: 2rem;
+	padding-top: 80px;
+	color: #171717;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+#main-content .text-main p {
+	margin-bottom: -1rem;
+	line-height: 30px;
+	font-size: 12pt;
+}
+
+#main-content .text-main img {
+	margin-top: 2.6rem;
+}
+.img-content img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.wrap-text {
+    padding-left: 40px;
+    max-width: 450px;
+}
+
+#footer-main {
+	text-align: center;
+	font-family: Montserrat,sans-serif;
+	float: left;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+#footer-main .button-main h2 {
+	font-family: Montserrat,sans-serif;
+	font-size: 2rem;
+	padding-top: 80px;
+	color: #171717;
+    font-weight: 500;
+    margin-bottom: -0.5rem;
+}
+#footer-main .button-main p {
+	margin-bottom: -1rem;
+	line-height: 30px;
+	font-size: 12pt;
+}
+
+#footer-main .button-main .button {
+	display: inline-block;
+	background-color: #10c9c3;
+	color: #fff;
+	border: none;
+	padding: 20px 35px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 0px;
+	line-height: 1.2;
+	font-size: .8rem;
+	margin-top: 25px;
+}
+
+
+#footer-main .button-main .button a {
+	list-style: none;
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .85rem;
+}
+#banner:before {
+    content: "";
+    background: rgba(103, 96, 96, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/*end cuong*/
+
+
+/* ================= Reponsive ================>
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width : 992px) {
+    .contact-form {
+        padding: 0 0 0 90px;
+    }
+    .contact-info {
+        padding: 0;
+    }
+}
+
+
+@media only screen and (min-width : 768px) {
+	.content-left, .content-right{
+		/*width: 100%;*/
+	}
+	.content-right img{
+		width: 100%;
+	}
+}
+@media (max-width: 1200px){
+	.wrap{
+		padding: 0 5%;
+		max-width: inherit;
+	}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    
+    .category-img.img-4 {
+        width: 100%;
+    }
+    
+    .category-img.img-4 > a {
+        float: left;
+        width: calc(100%/3);
+    }
+}
+@media (max-width: 991px){
+.content-left h1 {
+font-size: 20px;
+}
+.content-left p {
+font-size: 11px;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+.menu-content-main li {
+    line-height: 25px;
+    font-size: 11px;
+}
+.menu-content-main span {
+    font-size: 11px;
+    width: 50px;
+}
+.content-right img {
+    height: max-content;
+}
+}
+@media (max-width: 768px){
+	.footer-content{
+		float: none;
+		transform: none;
+		width: 100%;
+		text-align: center;
+	}
+	.footer-navigation{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	address {
+	    margin-top: 0;
+	    float: left;
+	}
+}
+@media (max-width: 480px){
+	.navigation ul > li > a{font-size: 11px;}
+	footer{max-height: inherit;padding: 30px 0;}
+	address {
+	    width: 100%;
+	    margin: 0;
+	    text-align: center;
+	}
+	ul.nav-bottom.list-unstyled{width: 100%;}
+}
+
+
+/* ================ End reponsive ==============>
